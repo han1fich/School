@@ -5,12 +5,16 @@
   "type": "module",
   "description": "Современная цифровая образовательная платформа для школ Кыргызстана",
   "scripts": {
-    "dev": "vite",
+    "dev": "npm run check:deps && vite",
     "build": "tsx vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check:deps": "node scripts/check-deps.mjs"
   },
   "dependencies": {
+    "@firebase/app": "^0.14.4",
+    "@firebase/auth": "^1.11.0",
+    "@firebase/firestore": "^4.9.2",
     "@hookform/resolvers": "^3.3.0",
     "@reduxjs/toolkit": "^1.9.7",
     "class-variance-authority": "^0.7.0",

@@ -1,4 +1,4 @@
-import { initializeApp } from 'firebase/app';
+import { initializeApp } from '@firebase/app';
 import { 
   getFirestore, 
   collection, 
@@ -10,8 +10,8 @@ import {
   doc,
   updateDoc,
   deleteDoc
-} from 'firebase/firestore';
-import { getAuth, signInAnonymously } from 'firebase/auth';
+} from '@firebase/firestore';
+import { getAuth, signInAnonymously } from '@firebase/auth';
 import firebaseConfig from '../config/firebase';
 
 // Initialize Firebase
