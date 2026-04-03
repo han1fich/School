@@ -33,7 +33,7 @@ import {
   Message as MessageType,
   initializeAuth
 } from '../services/firebase'
-import { Timestamp } from 'firebase/firestore'
+import { Timestamp } from '@firebase/firestore'
 
 // Define chat types
 interface Chat {
