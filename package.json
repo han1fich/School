@@ -12,6 +12,9 @@
     "check:deps": "node scripts/check-deps.mjs"
   },
   "dependencies": {
+    "@firebase/app": "^0.14.4",
+    "@firebase/auth": "^1.11.0",
+    "@firebase/firestore": "^4.9.2",
     "@hookform/resolvers": "^3.3.0",
     "@reduxjs/toolkit": "^1.9.7",
     "class-variance-authority": "^0.7.0",

@@ -1,4 +1,4 @@
-const requiredPackages = ['@firebase/app'];
+const requiredPackages = ['@firebase/app', '@firebase/auth', '@firebase/firestore'];
 
 const missing = [];
 for (const pkg of requiredPackages) {
@@ -14,6 +14,6 @@ if (missing.length > 0) {
   for (const pkg of missing) {
     console.error(`  - ${pkg}`);
   }
-  console.error('\nFix: run `npm install` (or `npm install firebase`) and restart `npm run dev`.\n');
+  console.error('\nFix: run `npm install` and restart `npm run dev`.\n');
   process.exit(1);
 }
